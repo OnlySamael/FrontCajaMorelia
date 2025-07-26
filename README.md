@@ -17,18 +17,24 @@
 
     src/
     ├── components/
-    │ ├── ClienteForm.vue # Formulario reutilizable para crear/editar clientes
-    │ ├── ConfirmDialog.vue # Componente de diálogo de confirmación
-    │ └── ... # Otros componentes compartidos
-    ├── modules/
-    │ └── clientes.js # Módulo Vuex para gestión del estado de clientes
-    ├── views/
-    │ ├── CrearCliente.vue # Vista para crear un nuevo cliente
-    │ ├── EditarCliente.vue # Vista para editar un cliente existente
-    │ └── ListaClientes.vue # Vista que lista todos los clientes con acciones
-    ├── store/
-    │ └── index.js # Configuración principal de Vuex con módulos
-    └── main.js # Archivo de arranque de la app Vue
+    │ ├── ClienteForm.vue        # Formulario reutilizable para crear/editar clientes
+    │ ├── ConfirmDialog.vue      # Componente de diálogo de confirmación
+    ├── plugins/                 # Plugins de Vue (ej: configuración Vuetify, etc.)
+    │   └── vuetify.js
+    ├── services/                # Servicios y utilidades (ej: notificaciones)
+    │   └── notify.js
+    ├── store/                   # Vuex store para manejo de estado
+    │   ├── modules/             # Módulos Vuex organizados por funcionalidades
+    │   │   └── clientes.js
+    │   └── index.js             # Archivo principal del store
+    ├── views/                   # Vistas (rutas principales)
+    │   ├── CrearCliente.vue
+    │   ├── EditarCliente.vue
+    │   └── ListaClientes.vue
+    ├── App.vue                  # Componente raíz Vue
+    ├── main.js                  # Entrada principal (bootstrap de la app)
+    ├── router.js                # Configuración de rutas Vue Router
+    ├── style.css                # Estilos globales
 
 
 ## ⚙️ Instalación
